@@ -1,6 +1,7 @@
 # Using official python runtime base image
 FROM python:2.7-alpine
-
+ENV http_proxy http://janki_chhatbar:March%40321@blrproxy.persistent.co.in:8080
+ENV https_proxy http://janki_chhatbar:March%40321@blrproxy.persistent.co.in:8080
 # Set the application directory
 WORKDIR /app
 

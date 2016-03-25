@@ -15,6 +15,7 @@ button{
   border-radius: 0;
   width: 100%;
   height: 50%;
+  font-weight: bold;
 }
 
 button[type="submit"] {
@@ -33,6 +34,10 @@ button.a{
 
 button.b{
   background-color: #00cbca;
+}
+
+button.c{
+  background-color: #0000FF;
 }
 
 #tip{
@@ -106,12 +111,20 @@ button.b{
   background-color: #00a2a1;
 }
 
+#choice button.c:hover{
+  background-color: #1488c6;
+}
+
 #choice button.a:focus{
   background-color: #1488c6;
 }
 
 #choice button.b:focus{
   background-color: #00a2a1;
+}
+
+#choice button.c:focus{
+  background-color: #1488c6;
 }
 
 #background-stats{
