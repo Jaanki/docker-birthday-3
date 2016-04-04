@@ -87,12 +87,17 @@ body{
   text-transform: uppercase;
 }
 
-#choice .choice.two{
+#choice .choice.expert{
   color: #00cbca;
   float: right;
 }
 
-#choice .choice.one{
+#choice .choice.intermediate{
+  color: #0000A0;
+  float: right;
+}
+
+#choice .choice.beginner{
   color: #2196f3;
   float: left;
 }
