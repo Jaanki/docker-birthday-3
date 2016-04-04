@@ -8,9 +8,9 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "Expert")
-option_b = os.getenv('OPTION_B', "Beginner")
-option_c = os.getenv('OPTION_C', "Intermediate")
+option_a = os.getenv('OPTION_A', "Beginner")
+option_b = os.getenv('OPTION_B', "Intermediate")
+option_c = os.getenv('OPTION_C', "Expert")
 
 hostname = socket.gethostname()
 
