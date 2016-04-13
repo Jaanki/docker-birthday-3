@@ -88,13 +88,14 @@ body{
 }
 
 #choice .choice.expert{
-  color: #00cbca;
+  color: #0000FF;
   float: right;
 }
 
 #choice .choice.intermediate{
   color: #0000A0;
   float: right;
+  position: relative
 }
 
 #choice .choice.beginner{

@@ -8,10 +8,10 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "Beginner")
-option_b = os.getenv('OPTION_B', "Intermediate")
-option_c = os.getenv('OPTION_C', "Expert")
-
+option_a = os.getenv('OPTION_A', "Haven't heard")
+option_b = os.getenv('OPTION_B', "Beginner")
+option_c = os.getenv('OPTION_C', "Intermediate")
+option_d = os.getenv('OPTION_D', "Expert")
 hostname = socket.gethostname()
 
 redis = connect_to_redis("redis")
@@ -36,6 +36,7 @@ def hello():
         option_a=option_a,
         option_b=option_b,
         option_c=option_c,
+	option_d=option_d,
         hostname=hostname,
         vote=vote,
     ))

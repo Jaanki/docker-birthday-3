@@ -15,11 +15,12 @@
     <div id="content-container">
       <div id="content-container-center">
         <!--<h3>{{option_a}} vs {{option_b}}!</h3> -->
-	<h3>"How well acquainted are you with Docker"</h3>
+	<h3>"How well acquainted are you with Docker?"</h3>
         <form id="choice" name='form' method="POST" action="/">
           <button id="a" type="submit" name="vote" class="a" value="a">{{option_a}}</button>
           <button id="b" type="submit" name="vote" class="b" value="b">{{option_b}}</button>
           <button id="c" type="submit" name="vote" class="c" value="c">{{option_c}}</button>
+	  <button id="d" type="submit" name="vote" class="d" value="d">{{option_d}}</button>
         </form>
         <div id="tip">
           (Tip: you can change your vote)
@@ -41,18 +42,28 @@
         $(".a").html('{{option_a}} <i class="fa fa-check-circle"></i>');
         $(".b").css('opacity','0.5');
         $(".c").css('opacity','0.5');
+	$(".d").css('opacity','0.5');
       }
       if(vote == "b"){
         $(".b").prop('disabled', true);
         $(".b").html('{{option_b}} <i class="fa fa-check-circle"></i>');
         $(".a").css('opacity','0.5');
         $(".c").css('opacity','0.5');
+	$(".d").css('opacity','0.5');
       }
       if(vote == "c"){
         $(".c").prop('disabled', true);
         $(".c").html('{{option_c}} <i class="fa fa-check-circle"></i>');
         $(".a").css('opacity','0.5');
         $(".b").css('opacity','0.5');
+	$(".d").css('opacity','0.5');
+      }
+      if(vote == "d"){
+        $(".d").prop('disbaled', true);
+	$(".d").html('{{option_d}} <i class=fa fa-check-circle"></i>');
+	$(".a").css('opacity','0.5');
+	$(".b").css('opacity','0.5');
+	$(".c").css('opacity','0.5');
       }
     </script>
     {% endif %}

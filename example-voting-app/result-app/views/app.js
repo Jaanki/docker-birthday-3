@@ -1,4 +1,4 @@
-var app = angular.module('javavspython', []);
+var app = angular.module('Dockercompetancy', []);
 var socket = io.connect({transports:['polling']});
 
 var bg1 = document.getElementById('background-stats-1');
@@ -17,9 +17,9 @@ app.controller('statsCtrl', function($scope,$http){
     }
   };
 
-  $scope.aPercent = 34;
-  $scope.bPercent = 33;
-  $scope.cPercent = 33;
+  $scope.aPercent = 33.3;
+  $scope.bPercent = 33.3;
+  $scope.cPercent = 33.4;
   $scope.buttonPush = function() {
     $http({
   method: 'GET',

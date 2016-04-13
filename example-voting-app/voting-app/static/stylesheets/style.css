@@ -29,15 +29,19 @@ button i{
 }
 
 button.a{
-  background-color: #1aaaf8;
+  background-color: #FF6666;
 }
 
 button.b{
-  background-color: #00cbca;
+  background-color: #FFFF80;
 }
 
 button.c{
-  background-color: #0000FF;
+  background-color: #FF8533;
+}
+
+button.d{
+  background-color: #99E600;
 }
 
 #tip{
@@ -104,15 +108,19 @@ button.c{
 }
 
 #choice button.a:hover{
-  background-color: #1488c6;
+  background-color: #FF6666;
 }
 
 #choice button.b:hover{
-  background-color: #00a2a1;
+  background-color: #FFFF80;
 }
 
 #choice button.c:hover{
-  background-color: #1488c6;
+  background-color: #FF8533;
+}
+
+#choice button.d:hover{
+  background-color: #99E600;
 }
 
 #choice button.a:focus{
@@ -120,10 +128,14 @@ button.c{
 }
 
 #choice button.b:focus{
-  background-color: #00a2a1;
+  background-color: #1488c6;
 }
 
 #choice button.c:focus{
+  background-color: #1488c6;
+}
+
+#choice button.d:focus{
   background-color: #1488c6;
 }
 
